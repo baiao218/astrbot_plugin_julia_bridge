@@ -2,6 +2,31 @@
 
 让 QQ 上的她和工作台上的她是同一个人。
 
+## 安装
+
+在 AstrBot WebUI 的**插件市场**搜索「跨端桥」，或者：
+
+```bash
+cd AstrBot/data/plugins
+git clone https://github.com/baiao218/astrbot_plugin_julia_bridge.git
+```
+
+重启 AstrBot（或在插件页点「重载插件」）。
+
+### 前置条件
+
+1. **AstrBot ≥ 4.17.0**
+2. 平台不限；记忆和情绪都写在本地文件里，不联网
+3. 如果要接 DeepSeek Harness 工作台，需要 dsh 已安装在同一个用户下
+   （它会往 `~/.dsh/AGENTS.md` 里写标记块）
+4. 单独装也能用：只是 QQ 这一侧多了几条 `/记住`、`/心情` 命令
+
+### 许可
+
+MIT，见 [LICENSE](LICENSE)。
+
+---
+
 ## 它解决什么
 
 她本来是两个：QQ 里一个，DeepSeek Harness 里一个。两边各有各的记忆，各有各的情绪。
