@@ -1,0 +1,32 @@
+{
+  "owner_qq": {
+    "description": "主号 QQ",
+    "type": "string",
+    "default": "2998283621",
+    "hint": "只有这个号能拿到共享记忆。别人问起她在 QQ 上聊过什么，她不该知道——那是你的私事。"
+  },
+  "recall_count": {
+    "description": "注入几条记忆",
+    "type": "int",
+    "default": 15,
+    "hint": "只取最近的几条。太多会挤占对话预算，也会让旧事一直盖着新事。"
+  },
+  "inject_on_llm": {
+    "description": "把记忆带进对话",
+    "type": "bool",
+    "default": true,
+    "hint": "关掉之后她就不再带着 QQ 的记忆说话，但同步到工作台的那条路还在。"
+  },
+  "sync_on_load": {
+    "description": "启动时同步到工作台",
+    "type": "bool",
+    "default": true,
+    "hint": "AstrBot 启动时把当前状态写进 ~/.dsh/AGENTS.md，保证工作台那边不会拿到过期的。"
+  },
+  "julia_home": {
+    "description": "共享目录",
+    "type": "string",
+    "default": "",
+    "hint": "留空表示 ~/.julia。里面放着 state.json（情绪）和 memory.md（记忆），QQ 端和工作台共用这一份。"
+  }
+}
